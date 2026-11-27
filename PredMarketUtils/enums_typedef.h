@@ -34,6 +34,8 @@ constexpr Indices string_to_indices(std::string_view str) {
     return Indices::None;
 }
 
+enum class order_type {VISIBLESMART, HIDDENSMART, NYSEVISIBLESMART, SMARTIOC, NYSEMOC, NONE};
+
 enum class side {BUY, SELL, NONE};
 
 typedef int64_t Price;
